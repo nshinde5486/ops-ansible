@@ -80,7 +80,7 @@ for more information.
          |  +-----------------+      +-----------------+ |
          |  | Ansible Jinja2  |      |     Ansible     | |
          |  | template files  |      | OpenSwitch Roles| |
-         |  |    (Optional)   |      |(router, bgp etc)| |
+         |  |    (Optional)   |      |(switch, bgp etc)| |
          |  +-----------------+      +-----------------+ |
          |           |                        |          |
          |           v                        v          |
