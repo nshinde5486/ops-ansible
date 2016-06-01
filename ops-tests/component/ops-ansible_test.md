@@ -15,25 +15,11 @@ The topology framework test setup is required for this test.
 #### Topology diagram
 
 ```
-         +-------------+
-         |             |
-         |             |
-         | OpenSwitch  |
-         |             |
-         |             |
-         |             |
-         +------+------+
-                |sp1
-                |
-                |eth0
-         +------+------+
-         |             |
-         |             |
-         |  Ansible    |
-         |  control    |
-         |  machine    |
-         +-------------+
-
+      +-----------------+             +------------+
+      |     Ansible     | eth0   eth0 |            |
+      | control machine |-------------| OpenSwitch |
+      |    (server)     |             |  (switch)  |
+      +-----------------+             +------------+
 ```
 
 ### Description
@@ -44,13 +30,13 @@ using a ping module through ansible playbook to check if we can communicate
 with the openswitch.
 
 #### Steps to run the tests:
-- git clone https://git.openswitch.net/openswitch/ops-build  ops-sim
-- cd ops-sim
+- git clone https://git.openswitch.net/openswitch/ops-build  ops-build
+- cd ops-build
 - make configure genericx86-64
-- make devenv_init
-- make devenv_add ops-ansible
-- make testenv_init
-- make testenv_run feature ops-ansible
+- make devenv\_init
+- make devenv\_add ops-ansible
+- make testenv\_init
+- make testenv\_run component ops-ansible
 
 ### Test result criteria
 #### Test pass criteria

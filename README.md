@@ -20,7 +20,7 @@ all the roles as well as the sample playbooks will be located under
 
 - src/
   - roles/
-  - examples/
+  - utils/
 
 ## What is the license?
 
