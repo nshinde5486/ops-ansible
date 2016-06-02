@@ -12,7 +12,7 @@
             {
                 "nodes": ["type=oobmhost"],
                 "attributes": {
-                    "image": "openswitch/ansiblecm:latest",
+                    "image": "keinohguchi/ops-ansible:2.1",
                     "binds": "@BUILD_ROOT@/src/ops-ansible:/etc/ansible;@BUILD_ROOT@/src/ops-ansible/utils:/root/.ssh"
                 }
             }

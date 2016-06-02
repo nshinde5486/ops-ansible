@@ -16,11 +16,13 @@ area for that purpose.
 
 As explained in the [OpenSwitch contribution page](http://www.openswitch.net/documents/dev/contribute-code#adding-top-level-files-and-directories),
 all the roles as well as the sample playbooks will be located under
-```src``` directory:
+```roles``` and ```utils``` directory, respectively:
 
-- src/
-  - roles/
-  - utils/
+- roles/
+  - switch/
+- utils/
+- ops-tests/
+  - components/
 
 ## What is the license?
 
