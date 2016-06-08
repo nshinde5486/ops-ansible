@@ -15,7 +15,7 @@ area for that purpose.
 ## What is the structure of the repository?
 
 As explained in the [OpenSwitch contribution page](http://www.openswitch.net/documents/dev/contribute-code#adding-top-level-files-and-directories),
-all the roles as well as the sample playbooks will be located under
+all the roles as well as the sample playbooks will be located under the
 ```roles``` and ```utils``` directory, respectively:
 
 - roles/
